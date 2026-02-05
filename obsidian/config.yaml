@@ -11,14 +11,9 @@ arch:
 init: false
 image: lscr.io/linuxserver/obsidian
 full_access: true
-privileged: true
-capabilities:
+privileged:
   - SYS_ADMIN
-  - SYS_CHROOT
-  - MKNOD
-tmpfs:
-  - /tmp:rw,noexec,nosuid,size=1g
-  - /sys/kernel/security:rw,noexec,nosuid,size=100m
+tmpfs: true
 environment:
   LIBGL_ALWAYS_SOFTWARE: "1"
   DISPLAY: ":1"
