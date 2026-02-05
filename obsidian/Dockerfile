@@ -1,19 +1,20 @@
 # Home Assistant add-on: build from source (no pre-published image).
-# Ubuntu required for apt-get and Obsidian/Electron stack; Alpine (default in some HA builds) has no apt-get.
-FROM ubuntu:22.04
+# build.yaml supplies BUILD_FROM (e.g. docker.io/library/ubuntu:22.04) so Supervisor uses Ubuntu, not Alpine.
+ARG BUILD_FROM=docker.io/library/ubuntu:22.04
+FROM ${BUILD_FROM}
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
 
-# Install runtime and add-on entrypoint deps
+# Install runtime and add-on entrypoint deps (ca-certificates for HTTPS downloads in build)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    unzip \
     xvfb \
     x11vnc \
     openbox \
     nginx \
-    wget \
-    curl \
-    unzip \
     fuse \
     libfuse2 \
     jq \
@@ -43,15 +44,17 @@ RUN groupadd -g 1000 obsidian && useradd -u 1000 -g obsidian -m -s /bin/bash obs
 # App dirs
 RUN mkdir -p /opt/obsidian/app /opt/obsidian/scripts /opt/obsidian/config
 
-# noVNC for web UI
+# noVNC for web UI (curl with retries; wget often fails with SSL/exit 5 in HA build env)
 WORKDIR /opt/obsidian
-RUN wget -q -O noVNC.zip "https://github.com/novnc/noVNC/archive/refs/tags/v1.4.0.zip" \
+RUN curl -fSL --retry 3 --retry-delay 5 --connect-timeout 30 \
+    -o noVNC.zip "https://github.com/novnc/noVNC/archive/refs/tags/v1.4.0.zip" \
     && unzip -q noVNC.zip && mv noVNC-1.4.0 noVNC && rm noVNC.zip
 
 # Obsidian AppImage
 WORKDIR /opt/obsidian/app
 ARG OBSIDIAN_VERSION=1.8.10
-RUN wget -q -O Obsidian.AppImage "https://github.com/obsidianmd/obsidian-releases/releases/download/v${OBSIDIAN_VERSION}/Obsidian-${OBSIDIAN_VERSION}.AppImage" \
+RUN curl -fSL --retry 3 --retry-delay 5 --connect-timeout 60 \
+    -o Obsidian.AppImage "https://github.com/obsidianmd/obsidian-releases/releases/download/v${OBSIDIAN_VERSION}/Obsidian-${OBSIDIAN_VERSION}.AppImage" \
     && chmod +x Obsidian.AppImage
 
 # Rootfs: entrypoint, scripts, nginx, openbox

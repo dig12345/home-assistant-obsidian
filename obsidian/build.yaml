@@ -1,5 +1,6 @@
 ---
+# Full image path required (Supervisor regex expects registry/path/image:tag).
 build_from:
-  aarch64: ubuntu:22.04
-  amd64: ubuntu:22.04
-  armv7: ubuntu:22.04
+  aarch64: docker.io/library/ubuntu:22.04
+  amd64: docker.io/library/ubuntu:22.04
+  armv7: docker.io/library/ubuntu:22.04
