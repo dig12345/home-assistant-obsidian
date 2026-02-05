@@ -1,5 +1,5 @@
 name: Obsidian
-version: "v1.8.10-ls73"
+version: "v1.8.10-ls74"
 slug: obsidian
 description: A secure, self-hosted digital brain with Home Assistant integration.
 url: https://github.com/adrianwedd/home-assistant-obsidian/tree/main/obsidian
@@ -13,6 +13,7 @@ image: lscr.io/linuxserver/obsidian
 full_access: true
 privileged:
   - SYS_ADMIN
+  - SYS_RESOURCE
 tmpfs: true
 # Map host GPU so display server can create GBM (avoid "Failed to create gbm")
 devices:

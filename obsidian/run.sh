@@ -19,4 +19,10 @@ export PUID="$(bashio::config 'puid')"
 export PGID="$(bashio::config 'pgid')"
 export TZ="$(bashio::config 'tz')"
 
+# Pre-create X11 socket directory so the display server can start (avoids
+# "_XSERVTransmkdir: Owner of /tmp/.X11-unix should be set to root").
+mkdir -p /tmp/.X11-unix
+chown 0:0 /tmp/.X11-unix
+chmod 1777 /tmp/.X11-unix
+
 exec /init
