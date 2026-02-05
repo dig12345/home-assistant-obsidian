@@ -1,7 +1,6 @@
 # Home Assistant add-on: build from source (no pre-published image).
-# Same stack as container/ but self-contained for Supervisor build.
-ARG BUILD_FROM
-FROM ${BUILD_FROM}
+# Ubuntu required for apt-get and Obsidian/Electron stack; Alpine (default in some HA builds) has no apt-get.
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
