@@ -14,10 +14,16 @@ full_access: true
 privileged:
   - SYS_ADMIN
 tmpfs: true
+# Map host GPU so display server can create GBM (avoid "Failed to create gbm")
+devices:
+  - /dev/dri
 environment:
   LIBGL_ALWAYS_SOFTWARE: "1"
   DISPLAY: ":1"
   XVFB_WHD: "1920x1080x24"
+  # Force CPU rendering so display works when no GPU or in restricted environments
+  DISABLE_DRI3: "true"
+  DISABLE_ZINK: "true"
 ingress: true
 ingress_port: 3000
 ingress_entry: "/"
