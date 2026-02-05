@@ -1,5 +1,7 @@
+# Built from Dockerfile in this directory (no pre-published image).
+# Same pattern as https://github.com/dig12345/meshcentral-homeassistant-addon
 name: Obsidian
-version: "2.0.0-ha"
+version: "2.0.0"
 slug: obsidian
 description: A secure, self-hosted digital brain with Home Assistant integration.
 url: https://github.com/dig12345/home-assistant-obsidian/tree/main/obsidian
@@ -8,13 +10,7 @@ arch:
   - amd64
   - armv7
 init: false
-# Custom container: Xvfb-based, no /sys/kernel/security or cgroup mounts.
-# Build from container/ via GitHub Actions (Build Custom Obsidian Container).
-image: ghcr.io/dig12345/home-assistant-obsidian/obsidian-ha
 tmpfs: true
-environment:
-  DISPLAY: ":1"
-  XVFB_WHD: "1920x1080x24"
 ingress: true
 ingress_port: 3000
 ingress_entry: "/"

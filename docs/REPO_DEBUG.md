@@ -2,7 +2,7 @@
 # Repository Registration Debug
 
 ## Issue
-The Home Assistant repository `https://github.com/adrianwedd/home-assistant-obsidian` doesn't register as a valid repository in Home Assistant.
+The Home Assistant repository `https://github.com/dig12345/home-assistant-obsidian` doesn't register as a valid repository in Home Assistant.
 
 ## Common Causes & Solutions
 
@@ -25,10 +25,10 @@ The Home Assistant repository `https://github.com/adrianwedd/home-assistant-obsi
 
 ```yaml
 name: "Obsidian Home Assistant Addon"
-url: "https://github.com/adrianwedd/home-assistant-obsidian"
+url: "https://github.com/dig12345/home-assistant-obsidian"
 maintainer: "Adrian Wedd <adrian@adrianwedd.com>"
-icon: "https://github.com/adrianwedd/home-assistant-obsidian/blob/main/obsidian/icon.png?raw=true"
-logo: "https://github.com/adrianwedd/home-assistant-obsidian/blob/main/obsidian/logo.png?raw=true"
+icon: "https://github.com/dig12345/home-assistant-obsidian/blob/main/obsidian/icon.png?raw=true"
+logo: "https://github.com/dig12345/home-assistant-obsidian/blob/main/obsidian/logo.png?raw=true"
 ```
 
 
@@ -49,7 +49,7 @@ logo: "https://github.com/adrianwedd/home-assistant-obsidian/blob/main/obsidian/
 **Try these steps**:
 1. Remove repository completely from HA
 2. Wait 5 minutes
-3. Add repository URL again: `https://github.com/adrianwedd/home-assistant-obsidian`
+3. Add repository URL again: `https://github.com/dig12345/home-assistant-obsidian`
 4. Check HA logs for specific error messages
 
 ### 5. Validation Tools
@@ -64,13 +64,13 @@ python -c "import yaml; yaml.safe_load(open('repository.yaml'))"
 python -c "import yaml; yaml.safe_load(open('obsidian/config.yaml'))"
 
 # Check URLs are accessible
-curl -I "https://github.com/adrianwedd/home-assistant-obsidian/blob/main/obsidian/icon.png?raw=true"
+curl -I "https://github.com/dig12345/home-assistant-obsidian/blob/main/obsidian/icon.png?raw=true"
 ```
 
 ## Debugging Steps
 
 ### Step 1: Verify Repository Accessibility
-- Visit: https://github.com/adrianwedd/home-assistant-obsidian
+- Visit: https://github.com/dig12345/home-assistant-obsidian
 - Check files are visible
 - Verify repository is public
 
@@ -107,8 +107,8 @@ except Exception as e:
 ### Step 4: Test Icon/Logo URLs
 
 ```bash
-curl -I "https://github.com/adrianwedd/home-assistant-obsidian/blob/main/obsidian/icon.png?raw=true"
-curl -I "https://github.com/adrianwedd/home-assistant-obsidian/blob/main/obsidian/logo.png?raw=true"
+curl -I "https://github.com/dig12345/home-assistant-obsidian/blob/main/obsidian/icon.png?raw=true"
+curl -I "https://github.com/dig12345/home-assistant-obsidian/blob/main/obsidian/logo.png?raw=true"
 ```
 
 ## Common Fixes
@@ -126,7 +126,7 @@ Try minimal version:
 
 ```yaml
 name: "Obsidian Home Assistant Addon"
-url: "https://github.com/adrianwedd/home-assistant-obsidian"
+url: "https://github.com/dig12345/home-assistant-obsidian"
 maintainer: "Adrian Wedd <adrian@adrianwedd.com>"
 ```
 

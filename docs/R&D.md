@@ -196,7 +196,7 @@ A Dockerfile is **not required and should be omitted** as the Supervisor ignores
 * **The repository.yaml File:** This file must exist at the root of the GitHub repository.
   name: "Obsidian Home Assistant Addon"
 <<<<<<< HEAD
-  url: "https://github.com/adrianwedd/home-assistant-obsidian"
+  url: "https://github.com/dig12345/home-assistant-obsidian"
   maintainer: "Adrian Wedd <adrian@adrianwedd.com>"
 
 * **User Installation Instructions:** The project's main README.md file must include a clear, step-by-step guide for users to add the repository.

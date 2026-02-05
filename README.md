@@ -3,11 +3,11 @@
 
 <div align="center">
 
-[![🚀 Latest Release](https://img.shields.io/github/v/release/adrianwedd/home-assistant-obsidian?style=for-the-badge&logo=github&color=6366f1&labelColor=1e293b)](https://github.com/adrianwedd/home-assistant-obsidian/releases)
+[![🚀 Latest Release](https://img.shields.io/github/v/release/dig12345/home-assistant-obsidian?style=for-the-badge&logo=github&color=6366f1&labelColor=1e293b)](https://github.com/dig12345/home-assistant-obsidian/releases)
 [![🏠 Home Assistant](https://img.shields.io/badge/Home_Assistant-Compatible-03DAC6?style=for-the-badge&logo=home-assistant&logoColor=white)](https://www.home-assistant.io/)
-[![🐳 Multi-Arch](https://img.shields.io/badge/Docker-Multi--Arch-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/adrianwedd/home-assistant-obsidian/pkgs/container/obsidian-ha)
-[![📜 MIT License](https://img.shields.io/github/license/adrianwedd/home-assistant-obsidian?style=for-the-badge&color=10b981&labelColor=1e293b)](https://github.com/adrianwedd/home-assistant-obsidian/blob/main/LICENSE)
-[![✨ Maintained](https://img.shields.io/maintenance/yes/2025?style=for-the-badge&color=f59e0b&labelColor=1e293b)](https://github.com/adrianwedd/home-assistant-obsidian)
+[![🐳 Multi-Arch](https://img.shields.io/badge/Docker-Multi--Arch-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/dig12345/home-assistant-obsidian/pkgs/container/obsidian-ha)
+[![📜 MIT License](https://img.shields.io/github/license/dig12345/home-assistant-obsidian?style=for-the-badge&color=10b981&labelColor=1e293b)](https://github.com/dig12345/home-assistant-obsidian/blob/main/LICENSE)
+[![✨ Maintained](https://img.shields.io/maintenance/yes/2025?style=for-the-badge&color=f59e0b&labelColor=1e293b)](https://github.com/dig12345/home-assistant-obsidian)
 
 </div>
 
@@ -30,7 +30,7 @@ Built on a **custom, security-first container architecture**, we've reimagined h
 
 ### 🎨 *Experience the Integration*
 
-<img src="https://github.com/adrianwedd/home-assistant-obsidian/raw/main/docs/screenshots/sidebar-integration.png" alt="Obsidian flourishing within Home Assistant" width="720" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);"/>
+<img src="https://github.com/dig12345/home-assistant-obsidian/raw/main/docs/screenshots/sidebar-integration.png" alt="Obsidian flourishing within Home Assistant" width="720" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);"/>
 
 *Obsidian flowing seamlessly through Home Assistant's Ingress—knowledge at your fingertips*
 
@@ -86,7 +86,7 @@ Built on a **custom, security-first container architecture**, we've reimagined h
 Navigate to your Home Assistant's **Settings** → **Add-ons** → **Add-on Store**, then click the **⋮** menu and select **Repositories**. Add this gateway:
 
 ```
-https://github.com/adrianwedd/home-assistant-obsidian
+https://github.com/dig12345/home-assistant-obsidian
 ```
 
 Watch as the repository blooms into your add-on marketplace, bringing new possibilities to your smart home.
@@ -235,7 +235,7 @@ You're now running a full Obsidian desktop environment! Create notes, build know
 
 **Community Support:**
 - 💬 [Home Assistant Community Forum](https://community.home-assistant.io/) (tag: `obsidian-addon`)
-- 🐛 [GitHub Issues](https://github.com/adrianwedd/home-assistant-obsidian/issues) for bugs and feature requests
+- 🐛 [GitHub Issues](https://github.com/dig12345/home-assistant-obsidian/issues) for bugs and feature requests
 - 📖 [Official Obsidian Help](https://help.obsidian.md/) for Obsidian-specific questions
 
 **When Reporting Issues:**
@@ -249,7 +249,7 @@ You're now running a full Obsidian desktop environment! Create notes, build know
 ### Development Environment
 
 ```bash
-git clone https://github.com/adrianwedd/home-assistant-obsidian
+git clone https://github.com/dig12345/home-assistant-obsidian
 cd home-assistant-obsidian
 code .
 # Choose "Reopen in Container" when prompted
@@ -312,7 +312,7 @@ This add-on follows the "pure wrapper" philosophy:
 - Shared community templates
 - Advanced collaboration features
 
-> 💡 **Want to contribute?** Check our [GitHub Issues](https://github.com/adrianwedd/home-assistant-obsidian/issues) for good first issues and feature requests!
+> 💡 **Want to contribute?** Check our [GitHub Issues](https://github.com/dig12345/home-assistant-obsidian/issues) for good first issues and feature requests!
 
 ---
 
@@ -348,7 +348,7 @@ This add-on follows the "pure wrapper" philosophy:
 
 **⭐ Found this useful? Star the repo!**
 
-[![GitHub stars](https://img.shields.io/github/stars/adrianwedd/home-assistant-obsidian?style=social)](https://github.com/adrianwedd/home-assistant-obsidian/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/dig12345/home-assistant-obsidian?style=social)](https://github.com/dig12345/home-assistant-obsidian/stargazers)
 
 *🧠 Your knowledge graph awaits. Start building today.*
 

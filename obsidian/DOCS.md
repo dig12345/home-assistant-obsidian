@@ -5,7 +5,7 @@
 <div align="center">
 
 [![🧠 Cognitive Engine](https://img.shields.io/badge/Mind-Augmentation-6366f1?style=for-the-badge&logo=brain&logoColor=white)](https://obsidian.md)
-[![🏗️ Custom Container](https://img.shields.io/badge/Architecture-Purpose--Built-10b981?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/adrianwedd/home-assistant-obsidian/pkgs/container/obsidian-ha)
+[![🏗️ Custom Container](https://img.shields.io/badge/Architecture-Purpose--Built-10b981?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/dig12345/home-assistant-obsidian/pkgs/container/obsidian-ha)
 [![🎭 Collaborative Art](https://img.shields.io/badge/Development-Human×AI-f59e0b?style=for-the-badge&logo=openai&logoColor=white)](https://claude.ai)
 
 *Transform your Home Assistant into an **Infinite Knowledge Reactor***
@@ -148,7 +148,7 @@ GODMODE builds should log metrics to `/config/perf.json` for long-term vault per
 
 ---
 
-Questions or feedback? [Open an issue on GitHub](https://github.com/adrianwedd/home-assistant-obsidian/issues) or join the discussion in the [Home Assistant Community](https://community.home-assistant.io/).
+Questions or feedback? [Open an issue on GitHub](https://github.com/dig12345/home-assistant-obsidian/issues) or join the discussion in the [Home Assistant Community](https://community.home-assistant.io/).
 
 ⧖ Reflect often. Write freely. Fork bravely.
 <!-- markdownlint-enable MD036 MD033 -->

@@ -37,7 +37,7 @@ This add-on provides the full Obsidian desktop experience directly in your Home 
 1. **Add Repository**
    - Navigate to **Settings** → **Add-ons** → **Add-on Store**
    - Click **⋮** (menu) → **Repositories**
-   - Add: `https://github.com/adrianwedd/home-assistant-obsidian`
+   - Add: `https://github.com/dig12345/home-assistant-obsidian`
 
 2. **Install Add-on**
    - Find **Obsidian** in the store
@@ -938,8 +938,8 @@ automation:
 **Getting Help:**
 - 📖 **Documentation:** This comprehensive guide
 - 💬 **Community Forum:** [Home Assistant Community](https://community.home-assistant.io/)
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/adrianwedd/home-assistant-obsidian/issues)
-- ✨ **Feature Requests:** [GitHub Discussions](https://github.com/adrianwedd/home-assistant-obsidian/discussions)
+- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/dig12345/home-assistant-obsidian/issues)
+- ✨ **Feature Requests:** [GitHub Discussions](https://github.com/dig12345/home-assistant-obsidian/discussions)
 
 **Contributing:**
 - 🔧 **Code Contributions:** Fork → Develop → Pull Request
@@ -953,7 +953,7 @@ automation:
 
 **📚 Questions? Found a bug? Want to contribute?**
 
-[📖 Read the Docs](https://github.com/adrianwedd/home-assistant-obsidian) • [💬 Community Forum](https://community.home-assistant.io/) • [🐛 Report Issues](https://github.com/adrianwedd/home-assistant-obsidian/issues) • [⭐ Star on GitHub](https://github.com/adrianwedd/home-assistant-obsidian)
+[📖 Read the Docs](https://github.com/dig12345/home-assistant-obsidian) • [💬 Community Forum](https://community.home-assistant.io/) • [🐛 Report Issues](https://github.com/dig12345/home-assistant-obsidian/issues) • [⭐ Star on GitHub](https://github.com/dig12345/home-assistant-obsidian)
 
 *🧠 Building knowledge graphs, one note at a time.*
 
